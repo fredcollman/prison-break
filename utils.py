@@ -6,6 +6,10 @@ Permutation = list[int]
 Sample = Iterator[Permutation]
 
 
+def all_prisoners(perm: Permutation) -> Iterator[int]:
+    yield from range(1, len(perm) + 1)
+
+
 def log(*msg: str) -> None:
     print(*msg, file=sys.stderr)
 
